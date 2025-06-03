@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Galeri</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <header class="bg-blue-700 text-white py-6 text-center">
+    <h1 class="text-3xl font-bold">Galeri Dokumentasi</h1>
+    <p class="text-lg">Foto & Video Kegiatan Mahasiswa</p>
+  </header>
+
+  <nav class="bg-white shadow-md py-4">
+    <div class="max-w-4xl mx-auto flex justify-center space-x-6">
+      <a href="index.html" class="text-blue-700 font-medium hover:underline">Home</a>
+      <a href="profil.html" class="text-blue-700 font-medium hover:underline">Profil</a>
+      <a href="galeri.html" class="text-blue-700 font-semibold underline">Galeri</a>
+      <a href="pendaftaran.html" class="text-blue-700 font-medium hover:underline">Pendaftaran</a>
+    </div>
+  </nav>
+
+  <main class="max-w-6xl mx-auto px-6 py-12 space-y-12">
+
+    <!-- Galeri Foto -->
+    <section>
+      <h2 class="text-2xl font-bold mb-6 border-b pb-2">Galeri Foto</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <img src="img/1715150204091.jpg" alt="Foto 1" class="rounded-lg shadow-md hover:scale-105 transition-transform" />
+        <img src="img/IMG_20240528_202230.jpg" alt="Foto 2" class="rounded-lg shadow-md hover:scale-105 transition-transform" />
+        <img src="img/IMG_8689.jpg" alt="Foto 3" class="rounded-lg shadow-md hover:scale-105 transition-transform" />
+        <img src="img/IMG-20231130-WA0026.jpg" alt="Foto 4" class="rounded-lg shadow-md hover:scale-105 transition-transform" />
+      </div>
+    </section>
+
+    <!-- Galeri Video -->
+    <section>
+      <h2 class="text-2xl font-bold mb-6 border-b pb-2">Galeri Video</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div class="w-full h-64">
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" class="w-full h-full rounded-lg shadow-md" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="w-full h-64">
+          <video controls class="w-full h-full rounded-lg shadow-md">
+            <source src="kampus.mp4" type="video/mp4" />
+            Browser Anda tidak mendukung pemutar video.
+          </video>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-gray-200 text-center py-4">
+    &copy; 2025 Website Mahasiswa
+  </footer>
+
+</body>
+</html>
